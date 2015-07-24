@@ -37,6 +37,7 @@ def ReadRemarks(user_id):
   for remark in query.fetch():
     new_color = "#%06x" % random.randint(0, 0xFFFFFF)
     remarks.append((remark.user, remark.text, new_color))
+    #Hello
 
   return remarks
 
